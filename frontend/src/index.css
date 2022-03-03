@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -27,3 +28,32 @@ body {
 }
 
 /* NAVBAR */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo-container {
+  width: 170px;
+  margin: 15px;
+}
+nav .logo-container .logo {
+  width: 100%;
+}
+
+nav .nav-button {
+}
+
+/* HOMEPAGE */
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

@@ -1,11 +1,14 @@
 import React from 'react'
+import whiteLogo from '../logos/tinder-white.png'
+import colorLogo from '../logos/tinder-color.png'
 
-const Nav = () => {
+const Nav = ({ minimal, authToken }) => {
   return (
     <nav>
       <div className="logo-container">
-        <img src="" alt="" className="logo" />
+        <img src={minimal ? colorLogo : whiteLogo} alt="" className="logo" />
       </div>
+      {!authToken && <button className="nav-buttton">Log In</button>}
     </nav>
   )
 }
